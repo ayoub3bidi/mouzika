@@ -3,7 +3,7 @@ Un mini projet pour la matière développement web avancé (Mastère Professionn
 
 # Scripts disponible  
 
-In the project directory, you can run:
+Dans le répertoire du projet, vous pouvez exécuter:
 
 ```
 yarn
