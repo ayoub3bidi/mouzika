@@ -12,8 +12,7 @@ export const shazamCoreApi = createApi({
     },
   }),
   endpoints: (builder) => ({
-    // getTopCharts: builder.query({ query: () => '/v1/charts/world' }), //! got an undefined error
-    getTopCharts: builder.query({ query: () => '' }), // this is just a quick fix
+    getTopCharts: builder.query({ query: () => '/v1/charts/world' }),
     getSongsByGenre: builder.query({ query: (genre) => `/v1/charts/genre-world?genre_code=${genre}` }),
     getSongsByCountry: builder.query({ query: (countryCode) => `/v1/charts/country?country_code=${countryCode}` }),
     getSongsBySearch: builder.query({ query: (searchTerm) => `/v1/search/multi?search_type=SONGS_ARTISTS&query=${searchTerm}` }),
